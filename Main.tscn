@@ -1,0 +1,130 @@
+[gd_scene load_steps=2 format=3 uid="uid://wj6lxg3hhf5"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_hbung"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hbung")
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 1
+offset_left = 832.0
+offset_top = 512.0
+offset_right = 940.0
+offset_bottom = 571.0
+pivot_offset = Vector2(24, 24)
+text = "5"
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 512.0
+offset_right = 1132.0
+offset_bottom = 571.0
+text = "6"
+
+[node name="Button1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 512.0
+offset_right = 172.0
+offset_bottom = 571.0
+text = "1"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 512.0
+offset_right = 364.0
+offset_bottom = 571.0
+text = "2"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 512.0
+offset_right = 556.0
+offset_bottom = 571.0
+text = "3"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 512.0
+offset_right = 748.0
+offset_bottom = 571.0
+text = "4"
+
+[node name="PlayerScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 64.0
+offset_right = 512.0
+offset_bottom = 128.0
+text = "Player Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerChoiceLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 256.0
+offset_right = 320.0
+offset_bottom = 320.0
+text = "Player Choice:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ComputerChoiceLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 256.0
+offset_right = 907.0
+offset_bottom = 320.0
+text = "Computer Choice:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ComputerScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 64.0
+offset_right = 704.0
+offset_bottom = 128.0
+text = "Computer Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 640.0
+offset_bottom = 192.0
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="ButtonReset" type="Button" parent="."]
+layout_mode = 0
+offset_left = 960.0
+offset_top = 64.0
+offset_right = 1068.0
+offset_bottom = 123.0
+pivot_offset = Vector2(24, 24)
+text = "Reset"
+
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="ButtonReset" to="." method="_on_button_reset_pressed"]
