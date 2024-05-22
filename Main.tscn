@@ -15,9 +15,9 @@ script = ExtResource("1_hbung")
 
 [node name="Button5" type="Button" parent="."]
 layout_mode = 1
-offset_left = 832.0
+offset_left = 1024.0
 offset_top = 512.0
-offset_right = 940.0
+offset_right = 1132.0
 offset_bottom = 571.0
 pivot_offset = Vector2(24, 24)
 text = "5"
@@ -25,40 +25,40 @@ text = "5"
 [node name="Button6" type="Button" parent="."]
 layout_mode = 0
 offset_left = 1024.0
-offset_top = 512.0
+offset_top = 384.0
 offset_right = 1132.0
-offset_bottom = 571.0
+offset_bottom = 443.0
 text = "6"
 
 [node name="Button1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 384.0
+offset_right = 164.0
+offset_bottom = 443.0
+text = "1"
+
+[node name="Button2" type="Button" parent="."]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 512.0
 offset_right = 172.0
 offset_bottom = 571.0
-text = "1"
+text = "2"
 
-[node name="Button2" type="Button" parent="."]
+[node name="Button3" type="Button" parent="."]
 layout_mode = 0
 offset_left = 256.0
 offset_top = 512.0
 offset_right = 364.0
 offset_bottom = 571.0
-text = "2"
-
-[node name="Button3" type="Button" parent="."]
-layout_mode = 0
-offset_left = 448.0
-offset_top = 512.0
-offset_right = 556.0
-offset_bottom = 571.0
 text = "3"
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 0
-offset_left = 640.0
+offset_left = 848.0
 offset_top = 512.0
-offset_right = 748.0
+offset_right = 956.0
 offset_bottom = 571.0
 text = "4"
 
